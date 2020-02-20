@@ -7,6 +7,7 @@ export class FruitsService {
   private httpClientFake: HttpClientFake;
 
   constructor() {
+    // CodeReview I would use an injection, rather than create an instance
     this.httpClientFake = new HttpClientFake();
   }
 
